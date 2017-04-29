@@ -1,4 +1,11 @@
-language: swift
-osx_image: xcode8.3
-xcode_project: CasingTools.xcodeproj
-xcode_scheme: CasingTools-macOS
+env:
+  global:
+    - LC_CTYPE=en_US.UTF-8
+matrix:
+  include:
+    - os: osx
+      language: swift
+      osx_image: xcode8.3
+      script:
+        - set -o pipefail
+        - xcodebuild test -scheme CasingTools-macOS | xcpretty
