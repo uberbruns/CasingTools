@@ -1,8 +1,5 @@
 # CasingTools
 
-[![Swift][swift-badge]][swift-url]
-[![License][mit-badge]][mit-url]
-
 CasingTools is a Swift Library you can use to change the casing of strings. Supported casing formats include a wide variety of options from camelCase to UPPER_SNAIL_CASE. The library is also able to split strings into words that are formated without spacings and in can also detect abbreviations (sequences of uppercase letters).
 
 ## List of examples
@@ -46,12 +43,3 @@ extension Casing {
 print(Casing.doubleClapCase("Some people tell Me that I need HELP!"))
 // -> SOME 👏👏 PEOPLE 👏👏 TELL 👏👏 ME 👏👏 THAT 👏👏 I 👏👏 NEED 👏👏 HELP
 ```
-
-## License
-
-This project is released under the MIT license. See [LICENSE](LICENSE) for details.
-
-[swift-badge]: https://img.shields.io/badge/Swift-3.0-orange.svg?style=flat
-[swift-url]: https://swift.org
-[mit-badge]: https://img.shields.io/badge/License-MIT-blue.svg?style=flat
-[mit-url]: https://tldrlegal.com/license/mit-license
