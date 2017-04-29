@@ -8,23 +8,35 @@ CasingTools is a Swift Library you can use to change the casing of strings. Supp
 
 ## Examples and Usage
 
-| Code Example | Output |
-|--------------|--------|
-| `Casing.lowerCamelCase("Some people tell Me that I need HELP!")` | `"somePeopleTellMeThatINeedHELP"` |
-| `Casing.lowerCamelCase("Some-Pêöple\nTellMe??ThatINeedHELP ")` | `"somePeopleTellMeThatINeedHELP"` |
-| `Casing.upperCamelCase("Some people tell Me that I need HELP!")` | `"SomePeopleTellMeThatINeedHELP"` |
-| `Casing.upperCamelCase("Some-Pêöple\nTellMe??ThatINeedHELP ")` | `"SomePeopleTellMeThatINeedHELP"` |
-| `Casing.uppercaseTrainCase("Some people tell Me that I need HELP!")` | `"SOME-PEOPLE-TELL-ME-THAT-I-NEED-HELP"` |
-| `Casing.uppercaseTrainCase("Some-Pêöple\nTellMe??ThatINeedHELP ")` | `"SOME-PEOPLE-TELL-ME-THAT-I-NEED-HELP"` |
-| `Casing.lowercaseTrainCase("Some people tell Me that I need HELP!")` | `"some-people-tell-me-that-i-need-help"` |
-| `Casing.lowercaseTrainCase("Some-Pêöple\nTellMe??ThatINeedHELP ")` | `"some-people-tell-me-that-i-need-help"` |
-| `Casing.lowercaseTrainCase("Some people tell Me that I need HELP!")` | `"some-people-tell-me-that-i-need-help"` |
-| `Casing.lowercaseTrainCase("Some-Pêöple\nTellMe??ThatINeedHELP ")` | `"some-people-tell-me-that-i-need-help"` |
-| `Casing.lowercaseSnailCase("Some people tell Me that I need HELP!")` | `"some_people_tell_me_that_i_need_help"` |
-| `Casing.lowercaseSnailCase("Some-Pêöple\nTellMe??ThatINeedHELP ")` | `"some_people_tell_me_that_i_need_help"` |
-| `Casing.splitIntoWords("Some people tell Me that I need HELP!")` | `["Some", "people", "tell", "Me", "that", "I", "need", "HELP"]` |
-| `Casing.splitIntoWords("Some-Pêöple\nTellMe??ThatINeedHELP ")` | `["Some", "People", "Tell", "Me", "That", "I", "Need", "HELP"]` |
+```swift
+// lowerCamelCase
+Casing.lowerCamelCase("Some people tell Me that I need HELP!") // -> "somePeopleTellMeThatINeedHELP"
+Casing.lowerCamelCase("Some-Pêöple\nTellMe??ThatINeedHELP ") // -> "somePeopleTellMeThatINeedHELP"
 
+// UpperCamelCase
+Casing.upperCamelCase("Some people tell Me that I need HELP!") // -> "SomePeopleTellMeThatINeedHELP"
+Casing.upperCamelCase("Some-Pêöple\nTellMe??ThatINeedHELP ") // -> "SomePeopleTellMeThatINeedHELP"
+
+// lower-train-case
+Casing.lowercaseTrainCase("Some people tell Me that I need HELP!") // -> "some-people-tell-me-that-i-need-help"
+Casing.lowercaseTrainCase("Some-Pêöple\nTellMe??ThatINeedHELP ") // -> "some-people-tell-me-that-i-need-help"
+
+// UPPER-TRAIN-CASE
+Casing.uppercaseTrainCase("Some people tell Me that I need HELP!") // -> "SOME-PEOPLE-TELL-ME-THAT-I-NEED-HELP"
+Casing.uppercaseTrainCase("Some-Pêöple\nTellMe??ThatINeedHELP ") // -> "SOME-PEOPLE-TELL-ME-THAT-I-NEED-HELP"
+
+// lowercase_snail_case
+Casing.lowercaseSnailCase("Some people tell Me that I need HELP!") // -> "some_people_tell_me_that_i_need_help"
+Casing.lowercaseSnailCase("Some-Pêöple\nTellMe??ThatINeedHELP ") // -> "some_people_tell_me_that_i_need_help"
+
+// UPPERCASE_SNAIL_CASE
+Casing.uppercaseSnailCase("Some people tell Me that I need HELP!") // -> "SOME_PEOPLE_TELL_ME_THAT_I_NEED_HELP"
+Casing.uppercaseSnailCase("Some-Pêöple\nTellMe??ThatINeedHELP ") // -> "SOME_PEOPLE_TELL_ME_THAT_I_NEED_HELP"
+
+// ["Split", "into", "words"]
+Casing.splitIntoWords("Some people tell Me that I need HELP!") // -> ["Some", "people", "tell", "Me", "that", "I", "need", "HELP"]
+Casing.splitIntoWords("Some-Pêöple\nTellMe??ThatINeedHELP ") // -> ["Some", "People", "Tell", "Me", "That", "I", "Need", "HELP"]
+```
 
 ## Extending CasingTools
 
