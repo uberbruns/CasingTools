@@ -2,7 +2,7 @@
 //  CasingToolsTests.swift
 //  CasingTools
 //
-//  Created by Karsten Bruns on {TODAY}.
+//  Created by Karsten Bruns on 2017-04-29.
 //  Copyright © 2017 CasingTools. All rights reserved.
 //
 
@@ -22,6 +22,7 @@ class CasingToolsTests: XCTestCase {
 
         ("testComponentPerformance", testComponentPerformance),
         ("testUsagePerformance", testUsagePerformance),
+        
         ("testEmpty", testEmpty),
     ]
 
