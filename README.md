@@ -6,9 +6,40 @@ CasingTools is a Swift Library you can use to change the casing of strings. Supp
 
 | Casing Function | Input | Output |
 |-----------------|-------|--------|
-| `lowerCamelCase` | `"SOME-Pêöple\nTellMe??ThatINeedHELP "` | `"somePeopleTellMeThatINeedHELP"` |
-| `upperCamelCase` | `"SOME-Pêöple\nTellMe??ThatINeedHELP "` | `"SOMEPeopleTellMeThatINeedHELP"` |
-| `uppercaseTrainCase` | `"SOME-Pêöple\nTellMe??ThatINeedHELP "` | `"SOME-PEOPLE-TELL-ME-THAT-I-NEED-HELP"` |
-| `lowercaseTrainCase` | `"SOME-Pêöple\nTellMe??ThatINeedHELP "` | `"some-people-tell-me-that-i-need-help"` |
-| `uppercaseSnailCase` | `"SOME-Pêöple\nTellMe??ThatINeedHELP "` | `"SOME_PEOPLE_TELL_ME_THAT_I_NEED_HELP"` |
-| `lowercaseSnailCase` | `"SOME-Pêöple\nTellMe??ThatINeedHELP "` | `"some_people_tell_me_that_i_need_help"` |
+| `lowerCamelCase` | `"Some people tell Me that I need HELP!"` | `"somePeopleTellMeThatINeedHELP"` |
+| `lowerCamelCase` | `"Some-Pêöple\nTellMe??ThatINeedHELP "` | `"somePeopleTellMeThatINeedHELP"` |
+| `upperCamelCase` | `"Some people tell Me that I need HELP!"` | `"SomePeopleTellMeThatINeedHELP"` |
+| `upperCamelCase` | `"Some-Pêöple\nTellMe??ThatINeedHELP "` | `"SomePeopleTellMeThatINeedHELP"` |
+| `uppercaseTrainCase` | `"Some people tell Me that I need HELP!"` | `"SOME-PEOPLE-TELL-ME-THAT-I-NEED-HELP"` |
+| `uppercaseTrainCase` | `"Some-Pêöple\nTellMe??ThatINeedHELP "` | `"SOME-PEOPLE-TELL-ME-THAT-I-NEED-HELP"` |
+| `lowercaseTrainCase` | `"Some people tell Me that I need HELP!"` | `"some-people-tell-me-that-i-need-help"` |
+| `lowercaseTrainCase` | `"Some-Pêöple\nTellMe??ThatINeedHELP "` | `"some-people-tell-me-that-i-need-help"` |
+| `lowercaseTrainCase` | `"Some people tell Me that I need HELP!"` | `"some-people-tell-me-that-i-need-help"` |
+| `lowercaseTrainCase` | `"Some-Pêöple\nTellMe??ThatINeedHELP "` | `"some-people-tell-me-that-i-need-help"` |
+| `lowercaseSnailCase` | `"Some people tell Me that I need HELP!"` | `"some_people_tell_me_that_i_need_help"` |
+| `lowercaseSnailCase` | `"Some-Pêöple\nTellMe??ThatINeedHELP "` | `"some_people_tell_me_that_i_need_help"` |
+| `splitIntoWords` | `"Some people tell Me that I need HELP!"` | `["Some", "people", "tell", "Me", "that", "I", "need", "HELP"]` |
+| `splitIntoWords` | `"Some-Pêöple\nTellMe??ThatINeedHELP "` | `["Some", "People", "Tell", "Me", "That", "I", "Need", "HELP"]` |
+
+
+## Extending CasingTools
+
+```swift
+extension Casing {
+    public static func doubleClapCase(_ string: String) -> String {
+        var result = ""
+        parseCharacters(in: string) { character in
+            if character.isFirstLetter && !character.isInFirstWord {
+                result += " 👏👏 "
+            }
+            result += character.uppercased()
+        }
+        return result
+    }
+}
+```
+
+```swift
+print(Casing.doubleClapCase("Some people tell Me that I need HELP!"))
+// -> SOME 👏👏 PEOPLE 👏👏 TELL 👏👏 ME 👏👏 THAT 👏👏 I 👏👏 NEED 👏👏 HELP
+```
