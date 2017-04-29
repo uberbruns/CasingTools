@@ -4,7 +4,7 @@
 [![License][mit-badge]][mit-url]
 [![Build Status][travis-badge]][travis-url]
 
-CasingTools is a Swift Library you can use to change the casing of strings. Supported casing formats include a wide variety of options from camelCase to UPPER_SNAIL_CASE. The library is also able to split strings into words that have no spacing and can also detect abbreviations (sequences of uppercase letters) and handles them correctly.
+CasingTools is a Swift Library you can use to change the casing of strings. Supported casing formats include a wide variety of options from camelCase to UPPER_SNAIL_CASE. The library is also able to work with strings that have no spacing and can also detect abbreviations (sequences of uppercase letters) and handles them correctly.
 
 ## Examples and Usage
 
