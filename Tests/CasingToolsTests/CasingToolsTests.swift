@@ -26,48 +26,58 @@ class CasingToolsTests: XCTestCase {
         ("testEmpty", testEmpty),
     ]
 
-    let testStringA = "SOMEPeopleTellMeThatINeedHELP"
-    let testStringB = "SOME-Pêöple\nTellMe??ThatINeedHELP "
+    let testStringA = "Some people tell Me that I need HELP!"
+    let testStringB = "SomePeopleTellMeThatINeedHELP"
+    let testStringC = "Some-Pêöple\nTellMe??ThatINeedHELP "
 
 
     func testLowerCamelCase() {
         XCTAssertEqual(Casing.lowerCamelCase(testStringA), "somePeopleTellMeThatINeedHELP")
         XCTAssertEqual(Casing.lowerCamelCase(testStringB), "somePeopleTellMeThatINeedHELP")
+        XCTAssertEqual(Casing.lowerCamelCase(testStringC), "somePeopleTellMeThatINeedHELP")
     }
 
 
     func testLowercaseSnailCase() {
         XCTAssertEqual(Casing.lowercaseSnailCase(testStringA), "some_people_tell_me_that_i_need_help")
         XCTAssertEqual(Casing.lowercaseSnailCase(testStringB), "some_people_tell_me_that_i_need_help")
+        XCTAssertEqual(Casing.lowercaseSnailCase(testStringC), "some_people_tell_me_that_i_need_help")
     }
 
 
     func testLowercaseTrainCase() {
         XCTAssertEqual(Casing.lowercaseTrainCase(testStringA), "some-people-tell-me-that-i-need-help")
         XCTAssertEqual(Casing.lowercaseTrainCase(testStringB), "some-people-tell-me-that-i-need-help")
+        XCTAssertEqual(Casing.lowercaseTrainCase(testStringC), "some-people-tell-me-that-i-need-help")
     }
 
 
     func testUpperCamelCase() {
-        XCTAssertEqual(Casing.upperCamelCase(testStringA), "SOMEPeopleTellMeThatINeedHELP")
-        XCTAssertEqual(Casing.upperCamelCase(testStringB), "SOMEPeopleTellMeThatINeedHELP")
+        XCTAssertEqual(Casing.upperCamelCase(testStringA), "SomePeopleTellMeThatINeedHELP")
+        XCTAssertEqual(Casing.upperCamelCase(testStringB), "SomePeopleTellMeThatINeedHELP")
+        XCTAssertEqual(Casing.upperCamelCase(testStringC), "SomePeopleTellMeThatINeedHELP")
     }
 
 
     func testUppercaseSnailCase() {
         XCTAssertEqual(Casing.uppercaseSnailCase(testStringA), "SOME_PEOPLE_TELL_ME_THAT_I_NEED_HELP")
         XCTAssertEqual(Casing.uppercaseSnailCase(testStringB), "SOME_PEOPLE_TELL_ME_THAT_I_NEED_HELP")
+        XCTAssertEqual(Casing.uppercaseSnailCase(testStringC), "SOME_PEOPLE_TELL_ME_THAT_I_NEED_HELP")
     }
 
 
     func testUppercaseTrainCase() {
         XCTAssertEqual(Casing.uppercaseTrainCase(testStringA), "SOME-PEOPLE-TELL-ME-THAT-I-NEED-HELP")
         XCTAssertEqual(Casing.uppercaseTrainCase(testStringB), "SOME-PEOPLE-TELL-ME-THAT-I-NEED-HELP")
+        XCTAssertEqual(Casing.uppercaseTrainCase(testStringC), "SOME-PEOPLE-TELL-ME-THAT-I-NEED-HELP")
+
+        print(Casing.splitIntoWords(testStringA))
+        print(Casing.splitIntoWords(testStringC))
     }
 
 
     func testComponentPerformance() {
-        let test = "SOMEPeopleTellMeThatINeedHELP"
+        let test = testStringA
 
         self.measure {
             for _ in 0..<10000 {
@@ -78,7 +88,7 @@ class CasingToolsTests: XCTestCase {
 
 
     func testUsagePerformance() {
-        let test = "SOMEPeopleTellMeThatINeedHELP"
+        let test = testStringA
 
         self.measure {
             for _ in 0..<1000 {
