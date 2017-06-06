@@ -11,12 +11,11 @@ import Foundation
 public struct Casing {
 
     // MARK: Constants
-
     private static let uppercaseLetters = Set("ABCDEFGHIJKLMNOPQRSTUVWXYZ".unicodeScalars)
     private static let lowercaseLetters = Set("abcdefghijklmnopqrstuvwxyz".unicodeScalars)
 
 
-    // MARK: Subtypes
+    // MARK: Types
 
     public typealias AnnotatedCharacterHandler = (AnnotatedCharacter) -> ()
 
