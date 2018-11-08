@@ -133,8 +133,8 @@ public struct Casing {
 
 
     public static func singularString(_ string: String) -> String {
-        if string.characters.last == "s" {
-            return String(string.characters.dropLast())
+        if string.last == "s" {
+            return String(string.dropLast())
         } else {
             return string
         }
