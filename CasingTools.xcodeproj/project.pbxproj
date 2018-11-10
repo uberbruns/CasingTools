@@ -104,7 +104,7 @@
 		9B3793DF21975F21003C6246 /* CasingTools_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CasingTools_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B3793E121975F21003C6246 /* CasingTools_macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CasingTools_macOS.h; sourceTree = "<group>"; };
 		9B3793E221975F21003C6246 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		"CasingTools::CasingTools::Product" /* CasingTools */ = {isa = PBXFileReference; lastKnownFileType = text; path = CasingTools; sourceTree = BUILT_PRODUCTS_DIR; };
+		"CasingTools::CasingTools::Product" /* CasingTools */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = CasingTools; sourceTree = BUILT_PRODUCTS_DIR; };
 		"CasingTools::CasingToolsTests::Product" /* CasingToolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = CasingToolsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Moderator::Moderator::Product" /* Moderator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Moderator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -1248,7 +1248,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
 				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGET_NAME = CasingTools;
 			};
 			name = Debug;
@@ -1269,7 +1269,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
 				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGET_NAME = CasingTools;
 			};
 			name = Release;
@@ -1323,6 +1323,7 @@
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "SWIFT_PACKAGE DEBUG";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				USE_HEADERMAP = NO;
 			};
 			name = Debug;
@@ -1378,6 +1379,7 @@
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
 				USE_HEADERMAP = NO;
 			};
 			name = Release;
@@ -1419,7 +1421,7 @@
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGET_NAME = CasingToolsTests;
 			};
 			name = Debug;
@@ -1440,7 +1442,7 @@
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGET_NAME = CasingToolsTests;
 			};
 			name = Release;
