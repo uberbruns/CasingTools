@@ -33,9 +33,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DD7502791C68FCFC006590AF"
-               BuildableName = "CasingTools-macOS Tests.xctest"
-               BlueprintName = "CasingTools-macOS Tests"
+               BlueprintIdentifier = "CasingTools::CasingToolsTests"
+               BuildableName = "CasingToolsTests.xctest"
+               BlueprintName = "CasingToolsTests"
                ReferencedContainer = "container:CasingTools.xcodeproj">
             </BuildableReference>
          </TestableReference>

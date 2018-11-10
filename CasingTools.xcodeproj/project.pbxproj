@@ -40,6 +40,7 @@
 		9B3793E821975F2E003C6246 /* CasingTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* CasingTools.swift */; };
 		9B3793E921975F2E003C6246 /* CasingTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* CasingTools.swift */; };
 		9B3793EA21975F2F003C6246 /* CasingTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* CasingTools.swift */; };
+		9B3793EB21977236003C6246 /* CasingTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* CasingTools.swift */; };
 		OBJ_31 /* CasingTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* CasingTools.swift */; };
 		OBJ_32 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* main.swift */; };
 		OBJ_34 /* Moderator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Moderator::Moderator::Product" /* Moderator.framework */; };
@@ -110,7 +111,7 @@
 		OBJ_13 /* CasingToolsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CasingToolsTests.swift; sourceTree = "<group>"; };
 		OBJ_14 /* Moderator */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Moderator; sourceTree = SOURCE_ROOT; };
 		OBJ_15 /* Configs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Configs; sourceTree = SOURCE_ROOT; };
-		OBJ_18 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/karstenbruns/Repositories/CasingTools/.build/checkouts/Moderator.git--6227788361836324270/Package.swift"; sourceTree = "<group>"; };
+		OBJ_18 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = ../Package.swift; sourceTree = "<group>"; };
 		OBJ_19 /* Moderator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Moderator.swift; sourceTree = "<group>"; };
 		OBJ_20 /* Parsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parsers.swift; sourceTree = "<group>"; };
 		OBJ_21 /* SwiftCompat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCompat.swift; sourceTree = "<group>"; };
@@ -243,7 +244,7 @@
 				OBJ_21 /* SwiftCompat.swift */,
 			);
 			name = "Moderator 0.5.0";
-			path = ".build/checkouts/Moderator.git--6227788361836324270/Sources";
+			path = ".build/checkouts/Moderator.git-1460296078820542659/Sources";
 			sourceTree = SOURCE_ROOT;
 		};
 		OBJ_22 /* Products */ = {
@@ -260,7 +261,7 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -275,7 +276,6 @@
 				9B3793E021975F21003C6246 /* CasingTools-macOS */,
 				OBJ_22 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -522,7 +522,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_22 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -627,6 +627,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				9B3793EB21977236003C6246 /* CasingTools.swift in Sources */,
 				OBJ_53 /* CasingToolsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
