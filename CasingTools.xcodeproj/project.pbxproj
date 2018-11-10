@@ -41,11 +41,11 @@
 		9B3793E921975F2E003C6246 /* CasingTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* CasingTools.swift */; };
 		9B3793EA21975F2F003C6246 /* CasingTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* CasingTools.swift */; };
 		9B3793EB21977236003C6246 /* CasingTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* CasingTools.swift */; };
+		9B3793EC21977522003C6246 /* CasingToolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* CasingToolsTests.swift */; };
 		OBJ_31 /* CasingTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* CasingTools.swift */; };
 		OBJ_32 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* main.swift */; };
 		OBJ_34 /* Moderator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Moderator::Moderator::Product" /* Moderator.framework */; };
 		OBJ_42 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
-		OBJ_53 /* CasingToolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* CasingToolsTests.swift */; };
 		OBJ_55 /* Moderator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Moderator::Moderator::Product" /* Moderator.framework */; };
 		OBJ_62 /* Moderator.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* Moderator.swift */; };
 		OBJ_63 /* Parsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* Parsers.swift */; };
@@ -627,8 +627,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				9B3793EC21977522003C6246 /* CasingToolsTests.swift in Sources */,
 				9B3793EB21977236003C6246 /* CasingTools.swift in Sources */,
-				OBJ_53 /* CasingToolsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

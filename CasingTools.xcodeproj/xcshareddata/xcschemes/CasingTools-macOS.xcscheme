@@ -20,6 +20,20 @@
                ReferencedContainer = "container:CasingTools.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "CasingTools::CasingToolsTests"
+               BuildableName = "CasingToolsTests.xctest"
+               BlueprintName = "CasingToolsTests"
+               ReferencedContainer = "container:CasingTools.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -29,16 +43,6 @@
       codeCoverageEnabled = "YES"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CasingTools::CasingToolsTests"
-               BuildableName = "CasingToolsTests.xctest"
-               BlueprintName = "CasingToolsTests"
-               ReferencedContainer = "container:CasingTools.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
