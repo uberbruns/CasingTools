@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1000"
+   LastUpgradeVersion = "1010"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "52D6D97B1BEFF229002C0205"
-               BuildableName = "CasingTools.framework"
+               BlueprintIdentifier = "9B3793B721975EF1003C6246"
+               BuildableName = "CasingTools_iOS.framework"
                BlueprintName = "CasingTools-iOS"
                ReferencedContainer = "container:CasingTools.xcodeproj">
             </BuildableReference>
@@ -43,8 +43,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "52D6D97B1BEFF229002C0205"
-            BuildableName = "CasingTools.framework"
+            BlueprintIdentifier = "9B3793B721975EF1003C6246"
+            BuildableName = "CasingTools_iOS.framework"
             BlueprintName = "CasingTools-iOS"
             ReferencedContainer = "container:CasingTools.xcodeproj">
          </BuildableReference>
@@ -65,8 +65,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "52D6D97B1BEFF229002C0205"
-            BuildableName = "CasingTools.framework"
+            BlueprintIdentifier = "9B3793B721975EF1003C6246"
+            BuildableName = "CasingTools_iOS.framework"
             BlueprintName = "CasingTools-iOS"
             ReferencedContainer = "container:CasingTools.xcodeproj">
          </BuildableReference>
@@ -83,8 +83,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "52D6D97B1BEFF229002C0205"
-            BuildableName = "CasingTools.framework"
+            BlueprintIdentifier = "9B3793B721975EF1003C6246"
+            BuildableName = "CasingTools_iOS.framework"
             BlueprintName = "CasingTools-iOS"
             ReferencedContainer = "container:CasingTools.xcodeproj">
          </BuildableReference>

@@ -275,4 +275,33 @@ public struct Casing {
         }
         return result
     }
+
+    public static func titleCase(_ string: String) -> String {
+        var result = ""
+        parseCharacters(in: string) { character in
+            let newWord = character.isFirstLetter && !character.isInFirstWord
+            if newWord {
+                result += " "
+            }
+            if character.isFirstLetter {
+                result += character.uppercased()
+            } else {
+                result += character.original
+            }
+        }
+        return result
+    }
+
+    public static func sentenceCase(_ string: String) -> String {
+        var result = ""
+        parseCharacters(in: string) { character in
+            let newWord = character.isFirstLetter && !character.isInFirstWord
+            if newWord {
+                result += " "
+            }
+            result += character.lowercased()
+        }
+        return result
+    }
+
 }
