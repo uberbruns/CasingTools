@@ -6,16 +6,14 @@ import PackageDescription
 let package = Package(
     name: "CasingTools",
     products: [
-        .executable(name: "casing", targets: ["CasingTools"]),
         .library(name: "CasingTools", targets: ["CasingTools"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/kareman/Moderator.git", from: "0.5.0"),
     ],
     targets: [
         .target(
             name: "CasingTools",
-            dependencies: ["Moderator"]),
+            dependencies: []),
         .testTarget(
             name: "CasingToolsTests",
             dependencies: ["CasingTools"]),
