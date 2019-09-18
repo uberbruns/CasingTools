@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name = "CasingTools"
-  s.version = "0.0.4"
-  s.summary = ""
+  s.version = "0.0.3"
+  s.summary = "CasingTools alows you to case strings."
   s.description = "CasingTools is a Swift Library you can use to change the casing of strings. Supported casing formats include a wide variety of options from camelCase to UPPER_SNAIL_CASE."
   s.homepage = "https://github.com/uberbruns/CasingTools"
   s.license = { :type => "MIT", :file => "LICENSE" }
