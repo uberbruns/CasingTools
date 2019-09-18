@@ -13,5 +13,6 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = "9.0"
   s.source = { :git => "https://github.com/uberbruns/CasingTools.git", :tag => s.version.to_s }
   s.source_files  = "Sources/**/*"
+  s.ios.exclude_files = 'Sources/CasingTools/main.swift'
   s.frameworks  = "Foundation"
 end
